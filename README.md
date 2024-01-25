@@ -10,11 +10,11 @@
 
 ## Screenshots
 
-![level1](C:\Users\DELL\OneDrive\Desktop\All 6 levels\level1.png)
+![level1]()
 
-![level2](C:\Users\DELL\OneDrive\Desktop\All 6 levels\level2.png)
+![level2]()
 
-![level3](C:\Users\DELL\OneDrive\Desktop\All 6 levels\level3.png)
+![level3](C:level3.png)
 
 ![level4](C:\Users\DELL\OneDrive\Desktop\All 6 levels\level4.png)
 
