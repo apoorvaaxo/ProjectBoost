@@ -14,12 +14,12 @@
 
 ![level2]()
 
-![level3](C:level3.png)
+![level3]()
 
-![level4](C:\Users\DELL\OneDrive\Desktop\All 6 levels\level4.png)
+![level4]()
 
-![level5](C:\Users\DELL\OneDrive\Desktop\All 6 levels\level5.png)
+![level5]()
 
-![level6](C:\Users\DELL\OneDrive\Desktop\All 6 levels\level6.png)
+![level6]()
 
 
