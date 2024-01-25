@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://dncs8u73iswxx"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_kml4d"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3p66n"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_m3srk"]
+sky_material = SubResource("ProceduralSkyMaterial_3p66n")
+
+[sub_resource type="Environment" id="Environment_6ddmb"]
+background_mode = 2
+sky = SubResource("Sky_m3srk")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_g3m24"]
+
+[node name="Player" type="Node3D"]
+script = ExtResource("1_kml4d")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6ddmb")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.811064, 0.0995653, -0.576422, 0, 0.985408, 0.170209, 0.584958, -0.138051, 0.799229, 0, 0, 0)
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.999519, -0.0310095, 0, 0.0310095, 0.999519, 0.0436171, 0.729333, 0)
+mesh = SubResource("CylinderMesh_g3m24")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.935, -0.695, 5)
+top_level = true
